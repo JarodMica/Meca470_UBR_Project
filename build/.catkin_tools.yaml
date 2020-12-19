@@ -1,0 +1,6 @@
+devel_space: /home/ros-industrial/catkin_cs/devel
+install: false
+install_space: /home/ros-industrial/catkin_cs/install
+profile: default
+source_space: /home/ros-industrial/catkin_cs/src
+workspace: /home/ros-industrial/catkin_cs

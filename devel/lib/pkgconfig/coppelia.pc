@@ -1,0 +1,8 @@
+prefix=/home/ros-industrial/catkin_cs/devel/.private/coppelia
+
+Name: coppelia
+Description: Description of coppelia
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,5 @@
+coppelia
+/home/ros-industrial/catkin_cs/devel/.private/coppelia/cmake.lock /home/ros-industrial/catkin_cs/devel/./cmake.lock
+/home/ros-industrial/catkin_cs/devel/.private/coppelia/lib/pkgconfig/coppelia.pc /home/ros-industrial/catkin_cs/devel/lib/pkgconfig/coppelia.pc
+/home/ros-industrial/catkin_cs/devel/.private/coppelia/share/coppelia/cmake/coppeliaConfig.cmake /home/ros-industrial/catkin_cs/devel/share/coppelia/cmake/coppeliaConfig.cmake
+/home/ros-industrial/catkin_cs/devel/.private/coppelia/share/coppelia/cmake/coppeliaConfig-version.cmake /home/ros-industrial/catkin_cs/devel/share/coppelia/cmake/coppeliaConfig-version.cmake
