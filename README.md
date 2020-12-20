@@ -5,7 +5,7 @@ Team #6
 Members: Jarod Mica, Alec Mitchell, Bryce Gregory
 
 ## Introduction
-The original purpose of this project was to design a robot capable of facing and stocking shelves in a retail setting.  Using the UBR_1 robot, this was to be achieved by interfacing between a ROS environment and a chosen simulation environment, Coppelia Sim.  However, due to limited documentation on the UBR_1 and time constraints, this proved to be much more difficult than what had been planned and only simple communication could be achieved from ROS to the UBR in Copellia.
+The original purpose of this project was to design a robot capable of facing and stocking shelves in a retail setting.  Using the UBR_1 robot, this was to be achieved by interfacing between a ROS environment and a chosen simulation environment, Coppelia Sim.  However, due to limited documentation on the UBR_1 and time constraints, this proved to be much more difficult than what had been planned and only simple joint manipulation could be achieved from ROS to the UBR in Copellia.
 
 ## Software
 - CoppeliaSim
@@ -176,4 +176,12 @@ Now the input gets passed into Coppelia sim by calling this function and moves i
 
 The last bit is to stop the movement of the arm.  Since the input changes the velocity to some chosen rad/s, the move_shoulder variable is set back to zero and passed back into Coppelia to stop the movement of the arm.
 
-## 
+## Video Demonstration of the Code
+Demonstration of the code in action can be seen below.  As noted earlier, any joint can be moved by altering the code provided. The shoulder_joint was simply chosen for this demonstration.
+https://www.youtube.com/watch?v=teFTCnWuZDE&feature=youtu.be
+
+## Problems Encountered
+One of the biggest hurdles for the project came in the very beginning of trying to learn how ROS works and how to interface between the ROS virtual machine and Coppelia Sim.  The problem arose from us having little to no experience in networking and no experience in ROS.  The connection appeared to be resolved by changing the settings in Virtual Box to Bridged adapater in the Virtual Machines network settings, however, the lack of ROS experience had to be resolved by referencing the ros-industrial tutorials and ros wiki.  The other hurdle came in the form of trying to work with a robot designed for a different environment.  As support for the UBR_1 was discontinued in 2014, a lot of the documentation revolved around a different approach than what we were trying to do.  All of the documenation for the specified usage of the robot utilized RViz and Gazebo inside of a ROS environment in order to manipulate and control the robot whereas ours revolved around using a ROS virtual machine to connect to an external environment running Coppelia Sim.  Figuring out how to bridge all of the code provided in the UBR1_preview Github to interface with Coppelia instead of Gazebo proved to be beyond the scope of our capabilites at this time period.  
+
+## Conclusion
+We weren't able to achieve the original plans and goals of the project.  
