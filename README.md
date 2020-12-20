@@ -151,3 +151,29 @@ The last part now just passes the valid input into a function that will update t
 ```
 sim.simxAddStatusbarMessage(clientID,"Now moving {} rad/s\n".format(move_shoulder),sim.simx_opmode_oneshot)
 ```
+
+This code just outputs a message in the status bar of Coppelia Sim.
+
+```
+err_code,j1 = sim.simxGetObjectHandle(clientID,"shoulder_lift_joint",sim.simx_opmode_blocking)
+```
+
+This code looks for a joint name in Coppelia Sim.  Here it looks for "shoulder_lift_joint" and stores the handle name into j1.
+
+```
+err_code = sim.simxSetJointTargetVelocity (clientID, j1, move_shoulder,sim.simx_opmode_streaming) # set the postion of J1
+        time.sleep(1) # Move for 1 second since rad/s
+```
+
+Now the input gets passed into Coppelia sim by calling this function and moves it for 1 second since the movement specified is in rad/s.  This means if an input of 1 is specified, it'll move a total of 1 rad.
+
+```
+        move_shoulder = 0 # Stop arm movement
+        err_code = sim.simxSetJointTargetVelocity (clientID, j1, move_shoulder,sim.simx_opmode_streaming) # set the postion of J1
+        #sim.simxGetPingTime(clientID)    
+        #sim.simxFinish(clientID)
+```
+
+The last bit is to stop the movement of the arm.  Since the input changes the velocity to some chosen rad/s, the move_shoulder variable is set back to zero and passed back into Coppelia to stop the movement of the arm.
+
+## 
