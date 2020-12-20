@@ -4,15 +4,17 @@ Team #6
 
 Members: Jarod Mica, Alec Mitchell, Bryce Gregory
 
-##Introduction
+## Introduction
 The original purpose of this project was to design a robot capable of facing and stocking shelves in a retail setting.  Using the UBR_1 robot, this was to be achieved by interfacing between a ROS environment and a chosen simulation environment, Coppelia Sim.  However, due to limited documentation on the UBR_1 and time constraints, this proved to be much more difficult than what had been planned and only simple communication could be achieved from ROS to the UBR in Copellia.
 
-##Software
+## Software
 - CoppeliaSim
 - ROS (melodic)
 
-##Coding
-The coding done for the project was all done in ROS Melodic.  The main functionality of it is publishing data to the port Coppelia is subscribed to in order to move the chosen joint of the UBR.  Since the code for moving a joint is the same using the Remote API functionality of Copellia Sim, the following code block shows how it was coded for the shoulder_lift_joint chosen. 
+## Coding
+The coding done for the project was all done in ROS Melodic.  The main functionality of it is publishing data to the port Coppelia is subscribed to in order to move the chosen joint of the UBR.  Since the code for moving a joint is the same using the Remote API functionality of Copellia Sim, the following code block shows how it was coded for the shoulder_lift_joint chosen.  Below it is a process on how the code works from the block provided.
+
+Since the Remote API can be configured by referencing Coppelia's user manual, the details for the files needed won't be discussed.  The only part that will be discussed is what is important in the code below. https://www.coppeliarobotics.com/helpFiles/en/legacyRemoteApiOverview.htm
 
 ```
 #!/usr/bin/env python3
@@ -67,5 +69,7 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         pass
 ```
+
+The first thing that had to be created was the main function with all of the correct imports
 
 
