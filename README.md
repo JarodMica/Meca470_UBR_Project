@@ -178,10 +178,12 @@ The last bit is to stop the movement of the arm.  Since the input changes the ve
 
 ## Video Demonstration of the Code
 Demonstration of the code in action can be seen below.  As noted earlier, any joint can be moved by altering the code provided. The shoulder_joint was simply chosen for this demonstration.
+
 https://www.youtube.com/watch?v=teFTCnWuZDE&feature=youtu.be
 
 ## Problems Encountered
 The biggest hurdles for the project came in tryin to learn how ROS works and how to interface between the ROS virtual machine and Coppelia Sim.  The connection appeared to be resolved by changing the settings in Virtual Box to Bridged adapater in the Virtual Machines network settings.  
+
 
 The other hurdle came in the form of trying to work with a robot designed for a different environment.  As support for the UBR_1 was discontinued in 2014, a lot of the documentation revolved around a different approach than what we were trying to do.  All of the documenation for the specified usage of the robot utilized RViz and Gazebo inside of a ROS environment in order to manipulate and control the robot whereas ours revolved around using a ROS virtual machine to connect to an external environment running Coppelia Sim.  Figuring out how to bridge all of the code provided in the UBR1_preview Github to interface with Coppelia instead of Gazebo proved to be beyond the scope of our capabilites at this time.
 
