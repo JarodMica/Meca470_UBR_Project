@@ -191,5 +191,7 @@ We weren't able to achieve the original plans and goals of the project.  However
 ## Reference
 
 Coppelia Sim (2020), Retrieved from <https://www.coppeliarobotics.com/helpFiles/en/remoteApiServerSide.htm>
+
 ROS-Industrial Revision (2020), Retrieved from <https://industrial-training-master.readthedocs.io/en/melodic/>
+
 ROS.org (2020), Retrieved from <http://wiki.ros.org/>
