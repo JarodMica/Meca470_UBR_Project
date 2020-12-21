@@ -13,7 +13,7 @@ The original purpose of this project was to design a robot capable of facing and
 - ROS (melodic)
 
 ## Coding
-The coding done for the project was all done in a virtual maching running ROS Melodic.  The main functionality of it is publishing data to the port Coppelia is subscribed to in order to move the chosen joint of the UBR.  Since the code for moving a joint is the same using the Remote API functionality of Copellia Sim, the following code block shows how it was coded for the shoulder_lift_joint chosen.  Below it is a process on how the code works from the block provided.
+The coding done for the project was all done in a virtual maching running ROS Melodic.  The main functionality of it is publishing data to the node Coppelia is subscribed to in order to move the chosen joint of the UBR.  Since the code for moving a joint is the same using the Remote API functionality of Copellia Sim, the following code block shows how it was coded for the shoulder_lift_joint chosen.  Below it is a process on how the code works from the block provided.
 
 Since the Remote API can be configured by referencing Coppelia's user manual, the details for the files needed won't be discussed.  The only part that will be discussed is what is important in the code below. https://www.coppeliarobotics.com/helpFiles/en/legacyRemoteApiOverview.htm
 
