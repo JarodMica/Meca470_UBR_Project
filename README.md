@@ -181,7 +181,15 @@ Demonstration of the code in action can be seen below.  As noted earlier, any jo
 https://www.youtube.com/watch?v=teFTCnWuZDE&feature=youtu.be
 
 ## Problems Encountered
-One of the biggest hurdles for the project came in the very beginning of trying to learn how ROS works and how to interface between the ROS virtual machine and Coppelia Sim.  The problem arose from us having little to no experience in networking and no experience in ROS.  The connection appeared to be resolved by changing the settings in Virtual Box to Bridged adapater in the Virtual Machines network settings, however, the lack of ROS experience had to be resolved by referencing the ros-industrial tutorials and ros wiki.  The other hurdle came in the form of trying to work with a robot designed for a different environment.  As support for the UBR_1 was discontinued in 2014, a lot of the documentation revolved around a different approach than what we were trying to do.  All of the documenation for the specified usage of the robot utilized RViz and Gazebo inside of a ROS environment in order to manipulate and control the robot whereas ours revolved around using a ROS virtual machine to connect to an external environment running Coppelia Sim.  Figuring out how to bridge all of the code provided in the UBR1_preview Github to interface with Coppelia instead of Gazebo proved to be beyond the scope of our capabilites at this time period.  
+The biggest hurdles for the project came in tryin to learn how ROS works and how to interface between the ROS virtual machine and Coppelia Sim.  The connection appeared to be resolved by changing the settings in Virtual Box to Bridged adapater in the Virtual Machines network settings.  
+
+The other hurdle came in the form of trying to work with a robot designed for a different environment.  As support for the UBR_1 was discontinued in 2014, a lot of the documentation revolved around a different approach than what we were trying to do.  All of the documenation for the specified usage of the robot utilized RViz and Gazebo inside of a ROS environment in order to manipulate and control the robot whereas ours revolved around using a ROS virtual machine to connect to an external environment running Coppelia Sim.  Figuring out how to bridge all of the code provided in the UBR1_preview Github to interface with Coppelia instead of Gazebo proved to be beyond the scope of our capabilites at this time.
 
 ## Conclusion
-We weren't able to achieve the original plans and goals of the project.  
+We weren't able to achieve the original plans and goals of the project.  However, we did learn how to interface between ROS in a virtual machine and Coppelia Sim in order to control the joints for the UBR robot.  Given more time and research, the original goal would definetely be achievable with the UBR, however, at this period in time, the extent of our control for the robot is limited to our understanding of ROS and converting the provided UBR code into programs that could connect into Coppelia Sim.
+
+## Reference
+
+Coppelia Sim (2020), Retrieved from <https://www.coppeliarobotics.com/helpFiles/en/remoteApiServerSide.htm>
+ROS-Industrial Revision (2020), Retrieved from <https://industrial-training-master.readthedocs.io/en/melodic/>
+ROS.org (2020), Retrieved from <http://wiki.ros.org/>
